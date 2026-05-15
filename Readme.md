@@ -437,4 +437,6 @@ Las contribuciones son bienvenidas. Por favor:
 
 Para reportar bugs o sugerencias, abre un issue en el repositorio.
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/HEAM275/authentication-sys)
+
 **Última actualización**: 15 de febrero de 2026
