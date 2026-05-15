@@ -406,7 +406,7 @@ redis-cli ping  # Debe retornar PONG
 
 ## 📞 Integración con Email-Service
 
-Este proyecto se integra con **email-service** para enviar correos de verificación. Ver la documentación de [Email-Service](../email-service/README.md) para detalles.
+Este proyecto se integra con **email-service** para enviar correos de verificación. Ver la documentación del repos email-service para detalles.
 
 **Punto de integración**:
 - `src/tasks/email_tasks.py` - Envía tareas Celery
