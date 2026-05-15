@@ -1,0 +1,15 @@
+.venv
+
+__pycache__
+
+__pycache__/**.py
+
+logs/**
+
+migrations/versions/
+
+.env
+
+.txt
+
+uv.lock
