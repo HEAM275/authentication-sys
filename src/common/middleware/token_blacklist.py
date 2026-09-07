@@ -32,7 +32,7 @@ class TokenBlacklistMiddleware(BaseHTTPMiddleware):
 
     async def dispatch(self, request: Request, call_next) -> Response:
         print("🔍 Middleware ejecutado para:", request.url.path)
-        if request.url.path in self.PUBLIC_PATHS:
+        if request.url.path in self.PUBLIC_PATHS or  request.method == "OPTIONS":
             return await call_next(request)
         
         # 1 obtener el token de la request
