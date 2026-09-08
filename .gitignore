@@ -13,3 +13,5 @@ migrations/versions/
 .txt
 
 uv.lock
+
+settings.json
