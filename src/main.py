@@ -33,6 +33,10 @@ app = FastAPI(
 )
 
 # Middleware
+
+app.add_middleware(AccessLoggerMiddleware, app_name="auth-system")
+app.add_middleware(TokenBlacklistMiddleware)
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.allowed_origins_list,
@@ -40,8 +44,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-app.add_middleware(AccessLoggerMiddleware, app_name="auth-system")
-app.add_middleware(TokenBlacklistMiddleware)
 
 app.add_exception_handler(AuthError, auth_exception_handler)
 app.add_exception_handler(RequestValidationError, validation_exception_handler)
